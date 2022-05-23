@@ -7,4 +7,9 @@ mkShell {
     haskellPackages.hasktags
     hpack
   ];
+  shellHook =
+    ''
+      echo "Setting environment"
+      export FOO="bar"
+    '';
 }
