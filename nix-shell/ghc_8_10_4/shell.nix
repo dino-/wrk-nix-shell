@@ -1,3 +1,5 @@
+# An example of retrieving a specific version of a nix package from the past
+
 let
   pkgs = import (builtins.fetchTarball {
     # This URL was discovered by looking for 'ghc' at the Nix package versions

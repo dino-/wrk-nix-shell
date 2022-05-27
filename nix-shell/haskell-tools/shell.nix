@@ -1,4 +1,6 @@
-# An example of a simple Haskell build env with tools I use often
+# An example of a simple Haskell build env with tools I use often at the latest
+# version in nixpkgs
+
 with (import <nixpkgs> {});
 mkShell {
   buildInputs = [
@@ -7,6 +9,7 @@ mkShell {
     haskellPackages.hasktags
     hpack
   ];
+  # shellHook is optional, here as an example
   shellHook =
     ''
       echo "Setting environment"

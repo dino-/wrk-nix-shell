@@ -24,13 +24,9 @@ In each of these example directories, cd into the dir and execute `nix-shell`.
 The `shell.nix` file will automatically be executed and you should end up in a
 shell.
 
-Directory `nix-shell/ghc-latest`
+Directory `nix-shell/haskell-tools`
 
-An example of opening up a shell with the latest ghc that's in nixpkgs
-
-Directory `nix-shell/ghc-latest-plus`
-
-The same example but with a full set of tools (cabal-install, ghc, hasktags,
+An example of a shell with a full set of tools (cabal-install, ghc, hasktags,
 hpack). This example also shows `shellHook` for adding some sh script commands
 in a string to be executed in the new shell. Good for setting up the
 environment.
