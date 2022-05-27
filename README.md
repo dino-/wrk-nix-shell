@@ -3,14 +3,14 @@
 
 ## Synopsis
 
-A project to explore nix's various ways of getting shells with environments
+A project documenting some of nix's various ways of getting shells with
+environments
 
 
 ## Description
 
-The project serves as a testing place for me to learn nix features and also the
-scripts here can be used as templates, models and examples for making new
-things.
+The project serves as a testing place for me to get more familiar with nix. The
+scripts here can be used as templates or examples for starting new projects.
 
 
 ## Usage
