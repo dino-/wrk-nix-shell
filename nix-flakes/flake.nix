@@ -8,7 +8,12 @@
 
     in {
       devShell.x86_64-linux = pkgs.mkShell {
-        buildInputs = with pkgs; [ ];
+        buildInputs = with pkgs; [
+          cabal-install
+          ghc
+          haskellPackages.hasktags
+          hpack
+        ];
 
         shellHook = ''
           # A prompt that will feel familiar to nix-shell users

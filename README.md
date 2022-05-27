@@ -47,7 +47,27 @@ after the script exits if they weren't on the system already.
 
 ### nix develop (nix flakes)
 
-flake.nix
+The more modern way to get a development shell is with Nix flakes. To use this
+example:
+
+    $ cd nix-flakes
+    $ nix develop
+
+The `flake.nix` file will be be used to set up the environment. In it, in the
+definition
+
+    devShell.x86_64-linux = pkgs.mkShell { ...
+
+you can see the familiar parts from the nix-shell examples (`buildInputs`,
+`shellHook`).
+
+It's customary to add the generated `flake.lock` file to source control, but
+don't take the one from this project. Let nix generate one for your project.
+
+Nix will expect your `flake.nix` file to be in git source control when `nix
+develop` is run. If this isn't desired, run it this way instead:
+
+    $ nix develop path:.
 
 
 ## Contact
