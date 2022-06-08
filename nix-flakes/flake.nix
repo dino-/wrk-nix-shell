@@ -4,7 +4,7 @@
   description = "A basic shell";
 
   outputs = { self, nixpkgs }:
-    let pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    let pkgs = import nixpkgs { system = "x86_64-linux"; };
 
     in {
       devShell.x86_64-linux = pkgs.mkShell {
