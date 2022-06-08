@@ -1,4 +1,8 @@
-# To run this without adding flake.nix to git: $ nix develop path:.
+# This is intended to replace `nix-shell` and should be run like:
+#   $ nix develop
+#
+# To use this in a new dir without adding flake.nix to git:
+#   $ nix develop path:.
 
 { 
   description = "A basic shell";
